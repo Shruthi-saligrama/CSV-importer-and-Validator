@@ -24,29 +24,37 @@ This project is a web application for importing, validating, and editing CSV fil
    ```sh
    git clone https://github.com/your-username/csv-importer-validator.git
    cd csv-importer-validator
+   ```
 
 2. Install dependencies:
-
+   
+```sh
 npm install
-
+```
 
 ### Running the Application
 
 1. Start the development server:
+```sh
 npm run dev
+```
 
 2. Start the JSON server:
-
+   
+```sh
 npm run start:json-server
-
+```
 
 Open your browser and navigate to http://localhost:3000.
 
 ### Building the Application
 
 1. To build the application for production, run:
-
+   
+```sh
 npm run build
+```
+
 
 ## Technologies Used
 React
