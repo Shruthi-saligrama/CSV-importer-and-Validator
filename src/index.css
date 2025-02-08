@@ -1,0 +1,84 @@
+.table-scrollable {
+  max-height: 400px; /* Set a fixed height */
+  overflow-y: auto;  /* Enable vertical scrolling */
+  border: 1px solid #ccc; /* Optional: Adds a border to the scroll area */
+}
+/* Excel-like table styling */
+.excel-table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  table-layout: fixed !important;
+}
+
+.excel-table th,
+.excel-table td {
+  border: 1px solid #ddd !important; /* Light gray gridlines */
+  text-align: left !important;
+  padding: 8px !important;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.excel-header {
+  background-color: #afd0f7 !important; /* Light gray header */
+  text-align: center !important;
+  font-weight: bold !important;
+  color:rgb(70, 67, 67) !important;
+}
+
+.excel-cell {
+  cursor: pointer !important;
+  transition: background-color 0.2s !important;
+}
+
+/* Highlight cell on hover */
+.excel-cell:hover {
+  background-color: #c1bfbf !important; /* Slightly darker gray */
+}
+
+/* Error cell styling */
+.excel-cell-error {
+  background-color: #f8d7da !important; /* Light red background */ 
+  color: #e81527 !important; /* Dark red text */
+}
+
+/* Editable input styling */
+.excel-input {
+  border: none !important;
+  outline: none !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: rgb(244, 230, 230) !important;
+  font-size: inherit !important;
+}
+
+/* Scrollable table container */
+.table-container {
+  max-height: 500px !important;
+  overflow-y: auto !important;
+  border: 1px solid #ddd !important;
+}
+
+.table-wrapper {
+  position: relative; /* Makes the badge relative to the table wrapper */
+}
+
+.badge-top-right {
+  top: -1.5rem;
+  right: 3rem;
+  transform: translate(50%, -50%); /* Adjust the badge slightly outside the table */
+  z-index: 10; /* Keeps the badge above the table */
+  padding: 1.5rem 1rem; /* Optional: Adjust badge padding */
+}
+
+.badge-bottom-right {
+  right: 0.5rem;
+  padding: 1.5rem 1rem;
+  bottom: 3rem;
+}
